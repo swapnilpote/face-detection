@@ -18,8 +18,8 @@ for year in os.listdir(orig_path):
 			print("ano_num : " + ano_num)
 			for FILENAME in os.listdir(orig_path + year + '/' + num + '/' + ano_num + '/big/'):
 				print(FILENAME)
-				
+
 				PATH = os.getcwd() + '/' + orig_path + year + '/' + num + '/' + ano_num + '/big/'
 				new_FILENAME = year + '_' + num + '_' + ano_num + '_' + FILENAME
-				
-				os.rename(PATH + FILENAME, os.getcwd() + path + 'train/face/' + new_FILENAME) 
+
+				os.rename(PATH + FILENAME, os.getcwd() + '/' + path + 'train/face/' + new_FILENAME) 
